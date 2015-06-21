@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Elementary Platform of Market Technical Analysis</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Elementary Platform of Market Technical Analysis">
+  <meta name="author" content="Vladimir Sazontov">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Elementary Platform of Market Technical Analysis</h1>
+    <h2>Presentation for Course Project &quot;Developing Data Products&quot;</h2>
+    <p>Vladimir Sazontov<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>The goal of the presentation</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This presentation is a compiled (using <strong>slidify</strong>) R markdown document issued within the framework of the project for the course &quot;Developing Data Products&quot; introduced by Johns Hopkins University through Coursera. The main body of the project contains a brief description of shiny web 
+application &quot;Elementary Platform of Market Technical Analysis&quot;.</p>
+
+<p>The shiny application is located here: 
+<a href="https://vladimir-sazontov.shinyapps.io/stockTA">https://vladimir-sazontov.shinyapps.io/stockTA</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Brief description</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This application is aimed for the following tasks:</p>
+
+<ol>
+<li><p>To load and visualize stock data provided by Yahoo Finance;</p></li>
+<li><p>To apply some basic techincal indicators for this data.</p></li>
+</ol>
+
+<p>The core calculations are performed using quantmod R-package. Detailed information can be
+found here:
+<a href="http://www.quantmod.com/">http://www.quantmod.com/</a></p>
+
+<p>First, user can choose a stock by typing a specific symbol - for instance, GOOG (Google), AAPL (Apple), and GS (Goldman Sachs). The complete matchlist of symbols is here:
+<a href="http://finance.yahoo.com/lookup">http://finance.yahoo.com/lookup</a></p>
+
+<p>Then user can choose the type of data representaion, the color scheme of graphs, the date period and some parameters for Bollinger Bands.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <article data-timings="">
+    <p>The two main indicators are introduced in this (first) version of the product:</p>
+
+<ol>
+<li><p>Relative Strength Index (RSI)</p></li>
+<li><p>Bollinger Bands (BB)</p></li>
+</ol>
+
+<p>These financial indicators are one of the most popular ones in technical trading.
+Basic information about them is here:</p>
+
+<p><a href="https://en.wikipedia.org/wiki/Relative_strength_index">https://en.wikipedia.org/wiki/Relative_strength_index</a></p>
+
+<p><a href="https://en.wikipedia.org/wiki/Bollinger_Bands">https://en.wikipedia.org/wiki/Bollinger_Bands</a></p>
+
+<p>For Bollinger Bands user can select the type of averaging (SMA - simple moving average, 
+EMA - exponential moving average, WMA - weighted moving average and DEMA - double exponential moving average). </p>
+
+<p>The second choice parameter is a period for average (from 5 to 100).
+The width of BB is set to 2 standard deviations (calculated according to the type of average).</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Some final remarks</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This version is just a draft for a more advanced platform which will include:</p>
+
+<ol>
+<li><p>More traditional indicators for technical analysis</p></li>
+<li><p>Opportunity to plot several graphs and calculate correlations between different stocks</p></li>
+<li><p>User&#39;s indicators and back-testing of trading strategies</p></li>
+</ol>
+
+<p>THANKS FOR ATTENTION!</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='The goal of the presentation'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Brief description'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title=''>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Some final remarks'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
