@@ -27,7 +27,7 @@ This application is aimed for the following tasks:
 
 1. To load and visualize stock data provided by Yahoo Finance;
 
-2. To apply some basic techincal indicators for this data.
+2. To apply some basic technical indicators for this data.
 
 The core calculations are performed using quantmod R-package. Detailed information can be
 found here:
@@ -64,14 +64,17 @@ The width of BB is set to 2 standard deviations (calculated according to the typ
 
 --- 
 
-## Some final remarks
+## Example of executive code
 
-This version is just a draft for a more advanced platform which will include:
 
-1. More traditional indicators for technical analysis
 
-2. Opportunity to plot several graphs and calculate correlations between different stocks
+```r
+chartSeries(get("SPY"), type = "candlesticks", show.grid = TRUE, TA = c(addVo(),addRSI()), TAsep =';',
+            line.type = "l", bar.type = "ohlc", theme = chartTheme("black"), major.ticks = 'auto',
+            minor.ticks = TRUE, yrange=NULL, plot=TRUE,)
+```
 
-3. User's indicators and back-testing of trading strategies
+![plot of chunk unnamed-chunk-2](assets/fig/unnamed-chunk-2-1.png) 
 
-THANKS FOR ATTENTION!
+
+

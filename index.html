@@ -65,7 +65,7 @@ application &quot;Elementary Platform of Market Technical Analysis&quot;.</p>
 
 <ol>
 <li><p>To load and visualize stock data provided by Yahoo Finance;</p></li>
-<li><p>To apply some basic techincal indicators for this data.</p></li>
+<li><p>To apply some basic technical indicators for this data.</p></li>
 </ol>
 
 <p>The core calculations are performed using quantmod R-package. Detailed information can be
@@ -109,18 +109,15 @@ The width of BB is set to 2 standard deviations (calculated according to the typ
 
 <slide class="" id="slide-4" style="background:;">
   <hgroup>
-    <h2>Some final remarks</h2>
+    <h2>Example of executive code</h2>
   </hgroup>
   <article data-timings="">
-    <p>This version is just a draft for a more advanced platform which will include:</p>
+    <pre><code class="r">chartSeries(get(&quot;SPY&quot;), type = &quot;candlesticks&quot;, show.grid = TRUE, TA = c(addVo(),addRSI()), TAsep =&#39;;&#39;,
+            line.type = &quot;l&quot;, bar.type = &quot;ohlc&quot;, theme = chartTheme(&quot;black&quot;), major.ticks = &#39;auto&#39;,
+            minor.ticks = TRUE, yrange=NULL, plot=TRUE,)
+</code></pre>
 
-<ol>
-<li><p>More traditional indicators for technical analysis</p></li>
-<li><p>Opportunity to plot several graphs and calculate correlations between different stocks</p></li>
-<li><p>User&#39;s indicators and back-testing of trading strategies</p></li>
-</ol>
-
-<p>THANKS FOR ATTENTION!</p>
+<p><img src="assets/fig/unnamed-chunk-2-1.png" alt="plot of chunk unnamed-chunk-2"> </p>
 
   </article>
   <!-- Presenter Notes -->
@@ -150,7 +147,7 @@ The width of BB is set to 2 standard deviations (calculated according to the typ
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=4 title='Some final remarks'>
+        data-slide=4 title='Example of executive code'>
          4
       </a>
     </li>
